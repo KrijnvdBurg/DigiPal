@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gsc.DigiPal.activities.fragments.viewProfile">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/background_material">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="94dp"
+                android:layout_height="90dp"
+                android:src="@drawable/profile"
+                app:border_color="#FF000000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_gravity="right|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[[email]]"
+                android:id="@+id/drawer_email_textView"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_below="@+id/drawer_username_textView"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[[full name]]"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingBottom="4dp"
+                android:id="@+id/drawer_username_textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:layout_gravity="left|top" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ScrollView android:id="@+id/ScrlView" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+            <LinearLayout android:id="@+id/layoutForScroll" android:orientation="vertical"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                >
+                <Gallery android:id="@+id/gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout android:id="@+id/chart" android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="140dp"
+            android:background="#fb2323" />
+    </LinearLayout>
+
+
+</FrameLayout>

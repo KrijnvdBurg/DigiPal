@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addPOphoto_imageButton" type="id"/>
+    <item name="addPOphoto_additionalPhoto" type="id"/>
+    <item name="POImages_progressBar" type="id"/>
+
+</resources>
